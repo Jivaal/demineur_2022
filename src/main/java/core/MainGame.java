@@ -35,7 +35,9 @@ public class MainGame
      */
     protected static MainGame resetInstance()
     {
-        return MainGame.instance = new MainGame();
+        MainGame.instance = new MainGame();
+
+        return MainGame.getInstance();
     }
 
     /**
