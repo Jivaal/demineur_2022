@@ -14,7 +14,11 @@ public class MainGameTest
     public void init() { this.mainGame = MainGame.getInstance(); }
 
     @AfterEach
-    public void clear() { this.mainGame = null; }
+    public void clear()
+    {
+        this.mainGame = MainGame.resetInstance();
+        this.mainGame = null;
+    }
 
     @Test
     public void testResetInstanceCreatesAnotherInstanceOfTheGame()
