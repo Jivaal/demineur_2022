@@ -38,7 +38,7 @@ public class Grid
         for (int i = 0; i < this.WIDTH; i++)
         {
             this.grid.add(new ArrayList<Mine>());
-            for (int j = 0; j < Grid.HEIGHT; j++)
+            for (int j = 0; j < this.HEIGHT; j++)
                 grid.get(i).add(new Mine());
         }
     }
