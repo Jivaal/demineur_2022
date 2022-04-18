@@ -1,4 +1,6 @@
 package mine;
 
-public class Mine {
+public class Mine
+{
+
 }
